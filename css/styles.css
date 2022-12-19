@@ -1,4 +1,67 @@
+:root {
+  --ordinary-text-color: #434455;
+  --list-title-color: #2e2f42;
+  --interractive-elements-color: #4d5ae5;
+  --background-button-1: #f4f4fd;
+  --background-button-2: #404bbf;
+  --hower-button-text: #ffffff;
+}
+
 body {
   color: #434455;
   font-family: "Roboto", sans-serif;
+}
+
+.item-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--list-title-color);
+}
+
+.item-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--ordinary-text-color);
+}
+
+.selection-button {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--interractive-elements-color);
+  background-color: var(--background-color-1);
+}
+
+.selection-button:hover,
+.selectionbutton:focus {
+  color: var(--hower-button-text);
+  background-color: var(--background-button-2);
+}
+
+.button {
+}
+
+.button:hover,
+.button:focus {
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--list-title-color);
+}
+
+.link-logo {
+  color: var(--interractive-elements-color);
 }
