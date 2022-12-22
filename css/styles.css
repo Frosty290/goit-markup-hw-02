@@ -1,67 +1,161 @@
 :root {
   --ordinary-text-color: #434455;
-  --list-title-color: #2e2f42;
-  --interractive-elements-color: #4d5ae5;
-  --background-button-1: #f4f4fd;
-  --background-button-2: #404bbf;
-  --hower-button-text: #ffffff;
+  --title-color: #2e2f42;
+  --interractive-el-color: #4d5ae5;
+  --shady-white-color: #f4f4fd;
+  --interractive-el-color-2: #404bbf;
+  --white-color: #ffffff;
 }
 
 body {
-  color: #434455;
+  color: var(--ordinary-text-color);
+  background-color: var(--white-color);
   font-family: "Roboto", sans-serif;
 }
 
-.item-title {
+.list {
+  list-style: none;
+}
+
+.list-element {
+  background-color: var(--white-color);
+}
+/* ---------------------------HEADER------------------------- */
+
+/* -----HEADER LOGO----- */
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-color);
+  text-decoration: none;
+}
+
+.link-logo {
+  color: var(--interractive-el-color);
+}
+
+/* -----HEADER NAVIGATION PAGE----- */
+.navigation-links {
+  list-style: none;
+  font-weight: 500;
+}
+
+.navigation-links .link {
+  text-decoration: none;
+  color: var(--title-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.navigation-links .link:hover,
+.navigation-links .link:focus,
+.navigation-links .link:active {
+  color: var(--interractive-el-color);
+}
+
+.contacts .link {
+  text-decoration: none;
+  color: var(--title-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.contacts .link:hover {
+  color: var(--interractive-el-color);
+}
+
+/* ---------------------------MAIN------------------------- */
+.title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--list-title-color);
+  color: var(--title-color);
 }
 
-.item-text {
+.text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--ordinary-text-color);
 }
 
-.selection-button {
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+/* ---------------------------STUDIO PAGE------------------------- */
+
+/* -- ------ORDER SERVICE SECTION-------- */
+.hero {
+  background-color: var(--title-color);
+}
+
+.hero-title {
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+}
+
+.hero-button {
+  background-color: var(--interractive-el-color);
+  color: var(--white-color);
   font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-button:active {
+  background-color: var(--interractive-el-color-2);
+}
+
+/* ------OUR TEAM SECTION------ */
+.about-team {
+  background-color: var(--shady-white-color);
+}
+
+/* ------------------------PORTFOLIO PAGE-------------------- */
+.selection-button {
+  color: var(--interractive-el-color);
+  background-color: var(--shady-white-color);
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: var(--interractive-elements-color);
-  background-color: var(--background-color-1);
+  border: none;
+  cursor: pointer;
 }
 
 .selection-button:hover,
 .selectionbutton:focus {
-  color: var(--hower-button-text);
-  background-color: var(--background-button-2);
+  color: var(--white-color);
+  background-color: var(--interractive-el-color-2);
 }
 
-.button {
+/* ---------------------FOOTER----------------- */
+.footer {
+  background-color: var(--title-color);
 }
 
-.button:hover,
-.button:focus {
+.footer-logo {
+  color: var(--white-color);
 }
 
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.33;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--list-title-color);
-}
-
-.link-logo {
-  color: var(--interractive-elements-color);
+.footer-text {
+  color: var(--white-color);
 }
