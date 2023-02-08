@@ -1,161 +1,176 @@
-:root {
-  --ordinary-text-color: #434455;
-  --title-color: #2e2f42;
-  --interractive-el-color: #4d5ae5;
-  --shady-white-color: #f4f4fd;
-  --interractive-el-color-2: #404bbf;
-  --white-color: #ffffff;
+/*  Цвет заголовков #2E2F42 */
+/* Основной цвет текста #434455 */
+/* акцент #434455 */
+/* цвет фона заголовка и футера #434455  */
+/* цвет фона секции #F4F4FD */
+
+:root{
+    --primary-text-color:#434455;
+    --title-text-color:#2E2F42;
+    --primary-white-color:#ffffff;
+    --accent-color:#4D5AE5;
+    --light-color:#F4F4FD;
 }
 
-body {
-  color: var(--ordinary-text-color);
-  background-color: var(--white-color);
-  font-family: "Roboto", sans-serif;
+body{
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height:1.5;
 }
 
-.list {
-  list-style: none;
+/* Логотип */
+.logo{
+    color: var(--title-text-color);
+    text-transform:uppercase;
+    font-family:'Raleway', sans-serif;
+    text-decoration:none;
+
 }
 
-.list-element {
-  background-color: var(--white-color);
-}
-/* ---------------------------HEADER------------------------- */
-
-/* -----HEADER LOGO----- */
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.33;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--title-color);
-  text-decoration: none;
+.logo-web{
+    color:var(--accent-color);
 }
 
-.link-logo {
-  color: var(--interractive-el-color);
+/* Навигационные ссылки */
+.nav-links{
+    list-style:none;
+    font-weight:600;
 }
 
-/* -----HEADER NAVIGATION PAGE----- */
-.navigation-links {
-  list-style: none;
-  font-weight: 500;
+.nav-links .link{
+    text-decoration:none;
+    color:var(--title-text-color);
+    font-weight:600;
 }
 
-.navigation-links .link {
-  text-decoration: none;
-  color: var(--title-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+.nav-links .link:hover,
+.nav-links .link:focus,
+.nav-links .link:active{
+    color:var(--accent-color);
+}
+/* Списки */
+.list{
+    list-style:none;
 }
 
-.navigation-links .link:hover,
-.navigation-links .link:focus,
-.navigation-links .link:active {
-  color: var(--interractive-el-color);
+.head-address .link{
+    text-decoration:none;
+    color:var(--title-text-color);
 }
 
-.contacts .link {
-  text-decoration: none;
-  color: var(--title-color);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+/* Секция герой */
+.hero{
+background-color:var(--title-text-color);
 }
 
-.contacts .link:hover {
-  color: var(--interractive-el-color);
+.hero-title{
+    color: var(--primary-white-color);
+    font-size:56px;
+    font-weight:600;
+    font-size:56px;
+    line-height: 1.07;
+    text-align:center;
 }
 
-/* ---------------------------MAIN------------------------- */
-.title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--title-color);
+.button-title{
+    background-color:var(--accent-color);
+    border:none;
+    cursor: pointer;
+    font-family: inherit;
+    color:var(--primary-white-color);
+    font-weight:600; 
+    font-size: 16px;
+    line-height: 1.2;
+    
 }
 
-.text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--ordinary-text-color);
+.button-title:active{
+    background-color:var(--accent-color);
 }
 
-.section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  color: var(--title-color);
-}
-/* ---------------------------STUDIO PAGE------------------------- */
-
-/* -- ------ORDER SERVICE SECTION-------- */
-.hero {
-  background-color: var(--title-color);
+/* Все секции в уникальном контенте первой страницы */
+.section{
+    background-color:var(--primary-white-color);
 }
 
-.hero-title {
-  color: var(--white-color);
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  text-align: center;
+.section-title{
+    color:var(--title-text-color);
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.1;
 }
 
-.hero-button {
-  background-color: var(--interractive-el-color);
-  color: var(--white-color);
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.2;
-  border: none;
-  cursor: pointer;
+.visually-hidden{
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
-.hero-button:active {
-  background-color: var(--interractive-el-color-2);
+
+/* Команда инфо */
+.team-info{
+    background-color:var(--light-color);
+
 }
 
-/* ------OUR TEAM SECTION------ */
-.about-team {
-  background-color: var(--shady-white-color);
+.team-names{
+    color:var(--title-text-color);
+    font-weight:600;
 }
 
-/* ------------------------PORTFOLIO PAGE-------------------- */
-.selection-button {
-  color: var(--interractive-el-color);
-  background-color: var(--shady-white-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  border: none;
-  cursor: pointer;
+/* Подвал */
+
+.basement{
+    background-color:var(--title-text-color);
 }
 
-.selection-button:hover,
-.selectionbutton:focus {
-  color: var(--white-color);
-  background-color: var(--interractive-el-color-2);
+.basement-text{
+    color:var(--primary-white-color);
 }
 
-/* ---------------------FOOTER----------------- */
-.footer {
-  background-color: var(--title-color);
+.basement-logo{
+    color:var(--primary-white-color);
+    text-transform:uppercase;
+    font-family:'Raleway', sans-serif;
+    text-decoration:none;
 }
 
-.footer-logo {
-  color: var(--white-color);
+/* PORTFOLIO PAGE */
+
+.portfolio-nav-links{
+    text-decoration:none;
 }
 
-.footer-text {
-  color: var(--white-color);
+.portfolio-nav-buttons{
+    color:var(--accent-color);
+    background-color:var(--light-color);
+    border:none;
+    font-family:inherit;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.portfolio-nav-buttons:hover,
+.portfolio-nav-buttons:focus{
+    color:var(--primary-white-color);
+    background-color:var(--accent-color);
+    cursor: pointer;
+}
+
+
+.cashless-payment{
+    width: 360px;
+    height: 300px;
+    background-color:var(--accent-color);
+    color:var(--light-color);
 }
